@@ -116,7 +116,7 @@ layers:
   - PG DN
   - PG UP
   - END
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: /, h: '$$mdi:apple-keyboard-option$$', s: '?'}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
