@@ -138,7 +138,7 @@ key codes
 &kp TAB         &kp Q        &kp W         &kp E          &kp R         &kp T         &none  &kp Y      &kp U         &kp I              &kp O          &kp P           &kp BSLH
 &lth 1 ESC      &kp A        &kp S         &kp D          &kp F         &kp G         &none  &kp H      &kp J         &kp K              &kp L          &kp SEMI        &lt 1 SQT
 &kp LEFT_SHIFT  &hml LALT Z  &hml LGUI X   &hml LSHIFT C  &hml LCTRL V  &kp B         &none  &kp N      &hmr RCTRL M  &hmr RSHIFT COMMA  &hmr RGUI DOT  &hmr LALT FSLH  &kp RIGHT_SHIFT
-&none           &kp LALT     &kp LEFT_GUI  &kp BACKSPACE  &kp SPACE     &caps_word    &none  &kp SPACE  &lth 2 ENTER  &mo 3              &kp RALT       &kp RCTRL
+&none           &kp LALT     &kp LEFT_GUI  &lth 2 BSPC    &kp SPACE     &caps_word    &none  &kp SPACE  &lth 2 ENTER  &mo 3              &kp RALT       &kp RCTRL
             >;
 
             sensor-bindings = <&rsr_vol &rsr_trans>;
