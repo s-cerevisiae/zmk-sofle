@@ -51,6 +51,19 @@ key codes
         tap-ms = <100>;
     };
 
+    macros {
+        // longer tap for games, supports hold
+        kmin: key_min {
+            compatible = "zmk,behavior-macro-one-param";
+            #binding-cells = <1>;
+            wait-ms = <33>;
+            bindings =
+                <&macro_press &macro_param_1to1 &kp MACRO_PLACEHOLDER>,
+                <&macro_pause_for_release>,
+                <&macro_release &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
+        };
+    };
+
     behaviors {
         rsr_vol: rsr_vol {
             compatible = "zmk,behavior-runtime-sensor-rotate";
@@ -72,7 +85,9 @@ key codes
             flavor = "hold-preferred";
             tapping-term-ms = <200>;
             quick-tap-ms = <200>;
-            bindings = <&mo>, <&kp>;
+            // &kmin only for hold preferred keys;
+            // coincidentally they don't have ordering issue
+            bindings = <&mo>, <&kmin>;
         };
 
         hml: home_row_mod_left {
