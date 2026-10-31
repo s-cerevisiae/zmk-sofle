@@ -260,6 +260,3 @@ layers:
   - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-combos:
-- p: [14, 40, 27]
-  k: '&soft_off'
