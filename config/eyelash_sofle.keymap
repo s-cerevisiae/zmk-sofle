@@ -24,8 +24,6 @@
     trigger-period-ms = <16>;
 };
 
-&soft_off { hold-time-ms = <2000>; };
-
 /*
 key codes
 0  1  2  3  4  5   6   7  8  9  10 11 12
@@ -119,15 +117,6 @@ key codes
             >;
 
             hold-trigger-on-release;
-        };
-    };
-
-    combos {
-        compatible = "zmk,combos";
-
-        softoff {
-            bindings = <&soft_off>;
-            key-positions = <14 40 27>;
         };
     };
 
